@@ -1,0 +1,82 @@
+<PROGRAM>
+<WME text="(" pos="5:0">
+<TYPE text="counter" pos="5:1"/>
+<ATTRIBUTE text="value" pos="5:9">
+<INTEGER text="1" pos="5:16"/>
+</ATTRIBUTE>
+</WME>
+<WME text="(" pos="6:0">
+<TYPE text="brick" pos="6:1"/>
+<ATTRIBUTE text="name" pos="6:7">
+<STRING text="A" pos="6:13"/>
+</ATTRIBUTE>
+<ATTRIBUTE text="size" pos="6:17">
+<INTEGER text="10" pos="6:23"/>
+</ATTRIBUTE>
+<ATTRIBUTE text="position" pos="6:26">
+<CONSTANT text="heap" pos="6:36"/>
+</ATTRIBUTE>
+</WME>
+<WME text="(" pos="7:0">
+<TYPE text="brick" pos="7:1"/>
+<ATTRIBUTE text="name" pos="7:7">
+<STRING text="B" pos="7:13"/>
+</ATTRIBUTE>
+<ATTRIBUTE text="size" pos="7:17">
+<INTEGER text="30" pos="7:23"/>
+</ATTRIBUTE>
+<ATTRIBUTE text="position" pos="7:26">
+<CONSTANT text="heap" pos="7:36"/>
+</ATTRIBUTE>
+</WME>
+<WME text="(" pos="8:0">
+<TYPE text="brick" pos="8:1"/>
+<ATTRIBUTE text="name" pos="8:7">
+<STRING text="C" pos="8:13"/>
+</ATTRIBUTE>
+<ATTRIBUTE text="size" pos="8:17">
+<INTEGER text="20" pos="8:23"/>
+</ATTRIBUTE>
+<ATTRIBUTE text="position" pos="8:26">
+<CONSTANT text="heap" pos="8:36"/>
+</ATTRIBUTE>
+</WME>
+<IF pos="65:0">
+<CONDITIONS>
+<WME text="(" pos="65:3">
+<TYPE text="goal" pos="65:4"/>
+<ATTRIBUTE text="is" pos="65:9">
+<CONSTANT text="getUnitDigit" pos="65:13"/>
+</ATTRIBUTE>
+</WME>
+<WME text="(" pos="66:3">
+<TYPE text="minuend" pos="66:4"/>
+<ATTRIBUTE text="unit" pos="66:12">
+<VARIABLE text="D" pos="66:18"/>
+</ATTRIBUTE>
+</WME>
+<WME text="(" pos="67:3">
+<TYPE text="subtrahend" pos="67:4"/>
+<ATTRIBUTE text="unit" pos="67:15">
+<GT text=">" pos="67:22">
+<ATTRIBUTE text="unit" pos="67:15"/>
+<VARIABLE text="D" pos="67:24"/>
+</GT>
+</ATTRIBUTE>
+</WME>
+</CONDITIONS>
+<ACTIONS>
+<REMOVE pos="69:3">
+<INTEGER text="1" pos="69:10"/>
+</REMOVE>
+<ADD pos="70:3">
+<WME text="(" pos="70:7">
+<TYPE text="goal" pos="70:8"/>
+<ATTRIBUTE text="is" pos="70:13">
+<CONSTANT text="borrowFromTens" pos="70:17"/>
+</ATTRIBUTE>
+</WME>
+</ADD>
+</ACTIONS>
+</IF>
+</PROGRAM>

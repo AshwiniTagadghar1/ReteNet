@@ -1,0 +1,86 @@
+// ReteNet Visulization
+digraph {
+	0 [label="α:<root,0,=> "]
+	1 [label="α:<class,block,=> "]
+	0 -> 1
+	2 [label="α:<class,base,=> "]
+	0 -> 2
+	3 [label="α:<class,side,=> "]
+	0 -> 3
+	4 [label="α:<class,top,=> "]
+	0 -> 4
+	5 [label="α:<name,X,=> "]
+	1 -> 5
+	6 [label="α:<block,X,=> "]
+	2 -> 6
+	7 [label="α:<block,X,=> "]
+	3 -> 7
+	8 [label="α:<block,X,=> "]
+	4 -> 8
+	9 [label="β:<,[]{1}> "]
+	5 -> 9
+	10 [label="β:<,[]{2}> "]
+	5 -> 10
+	11 [label="β:<,[]{3}> "]
+	5 -> 11
+	12 [label="β:<,[]{4}> "]
+	5 -> 12
+	13 [label="α:<shape,square,=> "]
+	6 -> 13
+	14 [label="α:<shape,circle,=> "]
+	6 -> 14
+	15 [label="α:<angle,90,<> "]
+	7 -> 15
+	16 [label="α:<angle,90,=> "]
+	7 -> 16
+	17 [label="α:<surface,point,=> "]
+	8 -> 17
+	18 [label="α:<surface,flat,=> "]
+	8 -> 18
+	19 [label="α:<surface,spherical,=> "]
+	8 -> 19
+	20 [label="β:<,[['block', 'X', '=']]{1}> "]
+	9 -> 20
+	21 [label="β:<,[['block', 'X', '=']]{2}> "]
+	10 -> 21
+	22 [label="β:<,[['block', 'X', '=']]{3}> "]
+	11 -> 22
+	23 [label="β:<,[['block', 'X', '=']]{4}> "]
+	12 -> 23
+	24 [label="α:<area,1,>> "]
+	13 -> 24
+	25 [label="α:<area,1,>> "]
+	14 -> 25
+	26 [label="α:<area,1,=> "]
+	14 -> 26
+	27 [label="α:<surface,plane,=> "]
+	15 -> 27
+	28 [label="α:<surface,curved,=> "]
+	15 -> 28
+	29 [label="α:<surface,curved,=> "]
+	16 -> 29
+	30 [label="β:<,[['block', 'X', '=']]{1}> "]
+	17 -> 30
+	31 [label="β:<,[['block', 'X', '=']]{3}> "]
+	17 -> 31
+	32 [label="β:<,[['block', 'X', '=']]{2}> "]
+	18 -> 32
+	33 [label="β:<,[['block', 'X', '=']]{4}> "]
+	19 -> 33
+	20 -> 30
+	21 -> 32
+	22 -> 31
+	23 -> 33
+	24 -> 9
+	25 -> 10
+	25 -> 12
+	26 -> 11
+	34 [label="α:<colour,green,=> "]
+	27 -> 34
+	35 [label="α:<colour,black,=> "]
+	28 -> 35
+	29 -> 21
+	29 -> 23
+	34 -> 20
+	35 -> 22
+}

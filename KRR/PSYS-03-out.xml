@@ -1,0 +1,247 @@
+<PROGRAM>
+    <IF pos='1:0'>
+        <CONDITIONS>
+            <WME text='(' pos='1:3'>
+                <TYPE text='block' pos='1:4'/>
+                <ATTRIBUTE text='name' pos='1:10'>
+                    <VARIABLE text='X' pos='1:16'/>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='2:3'>
+                <TYPE text='base' pos='2:4'/>
+                <ATTRIBUTE text='block' pos='2:9'>
+                    <VARIABLE text='X' pos='2:16'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='shape' pos='2:18'>
+                    <CONSTANT text='square' pos='2:25'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='area' pos='2:32'>
+                    <GT text='&gt;' pos='2:39'>
+                        <ATTRIBUTE text='area' pos='2:32'/>
+                        <INTEGER text='1' pos='2:41'/>
+                    </GT>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='3:3'>
+                <TYPE text='side' pos='3:4'/>
+                <ATTRIBUTE text='block' pos='3:9'>
+                    <VARIABLE text='X' pos='3:16'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='angle' pos='3:18'>
+                    <LT text='&lt;' pos='3:26'>
+                        <ATTRIBUTE text='angle' pos='3:18'/>
+                        <INTEGER text='90' pos='3:28'/>
+                    </LT>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='surface' pos='3:32'>
+                    <CONSTANT text='plane' pos='3:41'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='colour' pos='3:47'>
+                    <CONSTANT text='green' pos='3:55'/>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='4:3'>
+                <TYPE text='top' pos='4:4'/>
+                <ATTRIBUTE text='block' pos='4:8'>
+                    <VARIABLE text='X' pos='4:15'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='surface' pos='4:17'>
+                    <CONSTANT text='point' pos='4:26'/>
+                </ATTRIBUTE>
+            </WME>
+        </CONDITIONS>
+        <ACTIONS>
+            <ADD pos='6:3'>
+                <WME text='(' pos='6:7'>
+                    <TYPE text='class' pos='6:8'/>
+                    <ATTRIBUTE text='block' pos='6:14'>
+                        <VARIABLE text='X' pos='6:21'/>
+                    </ATTRIBUTE>
+                    <ATTRIBUTE text='type' pos='6:23'>
+                        <CONSTANT text='greenPyramid' pos='6:29'/>
+                    </ATTRIBUTE>
+                </WME>
+            </ADD>
+        </ACTIONS>
+    </IF>
+    <IF pos='8:0'>
+        <CONDITIONS>
+            <WME text='(' pos='8:3'>
+                <TYPE text='block' pos='8:4'/>
+                <ATTRIBUTE text='name' pos='8:10'>
+                    <VARIABLE text='X' pos='8:16'/>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='9:3'>
+                <TYPE text='base' pos='9:4'/>
+                <ATTRIBUTE text='block' pos='9:9'>
+                    <VARIABLE text='X' pos='9:16'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='shape' pos='9:18'>
+                    <CONSTANT text='circle' pos='9:25'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='area' pos='9:32'>
+                    <GT text='&gt;' pos='9:39'>
+                        <ATTRIBUTE text='area' pos='9:32'/>
+                        <INTEGER text='1' pos='9:41'/>
+                    </GT>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='10:3'>
+                <TYPE text='side' pos='10:4'/>
+                <ATTRIBUTE text='block' pos='10:9'>
+                    <VARIABLE text='X' pos='10:16'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='angle' pos='10:18'>
+                    <INTEGER text='90' pos='10:25'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='surface' pos='10:28'>
+                    <CONSTANT text='curved' pos='10:37'/>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='11:3'>
+                <TYPE text='top' pos='11:4'/>
+                <ATTRIBUTE text='block' pos='11:8'>
+                    <VARIABLE text='X' pos='11:15'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='surface' pos='11:17'>
+                    <CONSTANT text='flat' pos='11:26'/>
+                </ATTRIBUTE>
+            </WME>
+        </CONDITIONS>
+        <ACTIONS>
+            <ADD pos='13:3'>
+                <WME text='(' pos='13:7'>
+                    <TYPE text='class' pos='13:8'/>
+                    <ATTRIBUTE text='block' pos='13:14'>
+                        <VARIABLE text='X' pos='13:21'/>
+                    </ATTRIBUTE>
+                    <ATTRIBUTE text='type' pos='13:23'>
+                        <CONSTANT text='cylinder' pos='13:29'/>
+                    </ATTRIBUTE>
+                </WME>
+            </ADD>
+        </ACTIONS>
+    </IF>
+    <IF pos='15:0'>
+        <CONDITIONS>
+            <WME text='(' pos='15:3'>
+                <TYPE text='block' pos='15:4'/>
+                <ATTRIBUTE text='name' pos='15:10'>
+                    <VARIABLE text='X' pos='15:16'/>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='16:3'>
+                <TYPE text='base' pos='16:4'/>
+                <ATTRIBUTE text='block' pos='16:9'>
+                    <VARIABLE text='X' pos='16:16'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='shape' pos='16:18'>
+                    <CONSTANT text='circle' pos='16:25'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='area' pos='16:32'>
+                    <INTEGER text='1' pos='16:38'/>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='17:3'>
+                <TYPE text='side' pos='17:4'/>
+                <ATTRIBUTE text='block' pos='17:9'>
+                    <VARIABLE text='X' pos='17:16'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='angle' pos='17:18'>
+                    <LT text='&lt;' pos='17:26'>
+                        <ATTRIBUTE text='angle' pos='17:18'/>
+                        <INTEGER text='90' pos='17:28'/>
+                    </LT>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='surface' pos='17:32'>
+                    <CONSTANT text='curved' pos='17:41'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='colour' pos='17:48'>
+                    <CONSTANT text='black' pos='17:56'/>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='18:3'>
+                <TYPE text='top' pos='18:4'/>
+                <ATTRIBUTE text='block' pos='18:8'>
+                    <VARIABLE text='X' pos='18:15'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='surface' pos='18:17'>
+                    <CONSTANT text='point' pos='18:26'/>
+                </ATTRIBUTE>
+            </WME>
+        </CONDITIONS>
+        <ACTIONS>
+            <ADD pos='20:3'>
+                <WME text='(' pos='20:7'>
+                    <TYPE text='class' pos='20:8'/>
+                    <ATTRIBUTE text='block' pos='20:14'>
+                        <VARIABLE text='X' pos='20:21'/>
+                    </ATTRIBUTE>
+                    <ATTRIBUTE text='type' pos='20:23'>
+                        <CONSTANT text='wand' pos='20:29'/>
+                    </ATTRIBUTE>
+                </WME>
+            </ADD>
+        </ACTIONS>
+    </IF>
+    <IF pos='22:0'>
+        <CONDITIONS>
+            <WME text='(' pos='22:3'>
+                <TYPE text='block' pos='22:4'/>
+                <ATTRIBUTE text='name' pos='22:10'>
+                    <VARIABLE text='X' pos='22:16'/>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='23:3'>
+                <TYPE text='base' pos='23:4'/>
+                <ATTRIBUTE text='block' pos='23:9'>
+                    <VARIABLE text='X' pos='23:16'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='shape' pos='23:18'>
+                    <CONSTANT text='circle' pos='23:25'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='area' pos='23:32'>
+                    <GT text='&gt;' pos='23:39'>
+                        <ATTRIBUTE text='area' pos='23:32'/>
+                        <INTEGER text='1' pos='23:41'/>
+                    </GT>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='24:3'>
+                <TYPE text='side' pos='24:4'/>
+                <ATTRIBUTE text='block' pos='24:9'>
+                    <VARIABLE text='X' pos='24:16'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='angle' pos='24:18'>
+                    <INTEGER text='90' pos='24:25'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='surface' pos='24:28'>
+                    <CONSTANT text='curved' pos='24:37'/>
+                </ATTRIBUTE>
+            </WME>
+            <WME text='(' pos='25:3'>
+                <TYPE text='top' pos='25:4'/>
+                <ATTRIBUTE text='block' pos='25:8'>
+                    <VARIABLE text='X' pos='25:15'/>
+                </ATTRIBUTE>
+                <ATTRIBUTE text='surface' pos='25:17'>
+                    <CONSTANT text='spherical' pos='25:26'/>
+                </ATTRIBUTE>
+            </WME>
+        </CONDITIONS>
+        <ACTIONS>
+            <ADD pos='27:3'>
+                <WME text='(' pos='27:7'>
+                    <TYPE text='class' pos='27:8'/>
+                    <ATTRIBUTE text='block' pos='27:14'>
+                        <VARIABLE text='X' pos='27:21'/>
+                    </ATTRIBUTE>
+                    <ATTRIBUTE text='type' pos='27:23'>
+                        <CONSTANT text='dome' pos='27:29'/>
+                    </ATTRIBUTE>
+                </WME>
+            </ADD>
+        </ACTIONS>
+    </IF>
+</PROGRAM>
